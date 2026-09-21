@@ -223,9 +223,158 @@ const SELECTED: any[] = [
     "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
     "matchType": "poster",
     "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-16",
+    "sku": "PFL-ENRG-TOTE-PHOTON",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Photon Club Canvas Tote",
+    "category": "Energy Merch",
+    "supplierPriceUsd": 7.1,
+    "suggestedRetailUsd": 23.5,
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tote",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-17",
+    "sku": "PFL-ENRG-POSTER-GRID2",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Grid Ready Infographic Poster",
+    "category": "Education",
+    "supplierPriceUsd": 7.5,
+    "suggestedRetailUsd": 24.9,
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
+    "matchType": "poster",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-18",
+    "sku": "PFL-ENRG-TOTE-SUN",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Sun Share Market Tote",
+    "category": "Energy Merch",
+    "supplierPriceUsd": 7.1,
+    "suggestedRetailUsd": 22.5,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tote",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-19",
+    "sku": "PFL-ENRG-POSTER-KW",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Kilowatt Dreams Poster",
+    "category": "Education",
+    "supplierPriceUsd": 7.5,
+    "suggestedRetailUsd": 23.5,
+    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
+    "matchType": "poster",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-20",
+    "sku": "PFL-ENRG-TOTE-BATT2",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Battery Day Canvas Tote",
+    "category": "Energy Merch",
+    "supplierPriceUsd": 7.1,
+    "suggestedRetailUsd": 21.9,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tote",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-21",
+    "sku": "PFL-ENRG-POSTER-HORIZON",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Clean Horizon Wall Poster",
+    "category": "Education",
+    "supplierPriceUsd": 7.5,
+    "suggestedRetailUsd": 25.9,
+    "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "poster",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-22",
+    "sku": "PFL-ENRG-TOTE-WALK",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Watt Walk Everyday Tote",
+    "category": "Energy Merch",
+    "supplierPriceUsd": 7.1,
+    "suggestedRetailUsd": 20.9,
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tote",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-23",
+    "sku": "PFL-ENRG-POSTER-CITY",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Panel City Map Poster",
+    "category": "Education",
+    "supplierPriceUsd": 7.5,
+    "suggestedRetailUsd": 26.5,
+    "image": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80",
+    "matchType": "poster",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-24",
+    "sku": "PFL-ENRG-TOTE-SWITCH",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Green Switch Canvas Tote",
+    "category": "Energy Merch",
+    "supplierPriceUsd": 7.1,
+    "suggestedRetailUsd": 24.9,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tote",
+    "sector": "solar energy"
+  },
+  {
+    "id": "printful-solar-energy-25",
+    "sku": "PFL-ENRG-POSTER-AMPERE",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Future Ampere Poster",
+    "category": "Education",
+    "supplierPriceUsd": 7.5,
+    "suggestedRetailUsd": 22.5,
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
+    "matchType": "poster",
+    "sector": "solar energy"
   }
 ];
-
 const SECTOR_ALIASES: Record<string, string> = {
   "beauty": "beauty",
   "perfume": "beauty",
@@ -255,12 +404,10 @@ const SECTOR_ALIASES: Record<string, string> = {
   "auto": "car accessories",
   "automotive": "car accessories"
 };
-
 function money(value: unknown) {
   const amount = Number(value);
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) / 100 : 0;
 }
-
 function resolveSector(raw: string) {
   const key = String(raw || "").toLowerCase().trim();
   if (!key) return SELECTED[0]?.sector || "beauty";
@@ -270,7 +417,6 @@ function resolveSector(raw: string) {
   }
   return key;
 }
-
 function curated(sector: string) {
   return SELECTED
     .filter((p) => !p.sector || String(p.sector).toLowerCase() === sector)
@@ -288,7 +434,6 @@ function curated(sector: string) {
     }))
     .filter((p) => p.suggestedRetailUsd > 0 && p.name);
 }
-
 export default async (req: Request, context: any) => {
   if (req.method !== "GET") return Response.json({ error: "Method not allowed" }, { status: 405 });
   const url = new URL(req.url);
@@ -298,16 +443,7 @@ export default async (req: Request, context: any) => {
   const headers = { "access-control-allow-origin": "*", "cache-control": "public, max-age=60" };
   const products = curated(sector).slice(0, 30);
   return Response.json(
-    {
-      ok: true,
-      supplier: "printful",
-      sector,
-      query: sector,
-      products,
-      count: products.length,
-      source: "printful-selected-primary",
-      markets: ["NO", "EU", "PE"],
-    },
+    { ok: true, supplier: "printful", sector, query: sector, products, count: products.length, source: "printful-selected-primary", markets: ["NO", "EU", "PE"] },
     { status: products.length ? 200 : 503, headers }
   );
 };
