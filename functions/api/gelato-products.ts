@@ -1,873 +1,229 @@
-const SELECTED: any[] = [
-  {
-    "id": "gelato-solar-energy-1",
-    "sku": "GEL-ENRG-TOTE-SOLAR",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Solar Future Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 22.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-2",
-    "sku": "GEL-ENRG-TOTE-WATT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Watt Wise Canvas Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 21.9,
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-3",
-    "sku": "GEL-ENRG-TOTE-GRID",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Clean Grid Market Tote",
-    "category": "Education",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 23.5,
-    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-4",
-    "sku": "GEL-ENRG-POSTER-SOLAR",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Solar Future Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 24.9,
-    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-5",
-    "sku": "GEL-ENRG-POSTER-CHECK",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Home Energy Checklist Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 21.9,
-    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-6",
-    "sku": "GEL-ENRG-POSTER-WIND",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Wind & Sun Infographic Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 22.9,
-    "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-7",
-    "sku": "GEL-ENRG-POSTER-NETZERO",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Net Zero Vision Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 23.5,
-    "image": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-8",
-    "sku": "GEL-ENRG-TOTE-CHARGE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Charge Forward Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 20.9,
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-9",
-    "sku": "GEL-ENRG-POSTER-PANEL",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Panel Pride Wall Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 25.5,
-    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-10",
-    "sku": "GEL-ENRG-TOTE-KWH",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Green kWh Canvas Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 24.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-11",
-    "sku": "GEL-ENRG-POSTER-MAP",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Future Grid Map Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 26.9,
-    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-12",
-    "sku": "GEL-ENRG-TOTE-ECO",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Eco Carry All Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 19.9,
-    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-13",
-    "sku": "GEL-ENRG-POSTER-PHOTON",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Photon Path Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 24.5,
-    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-14",
-    "sku": "GEL-ENRG-TOTE-BATTERY",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Battery Freedom Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 23.9,
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-15",
-    "sku": "GEL-ENRG-POSTER-CARBON",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Carbon Cut Checklist Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 22.5,
-    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-16",
-    "sku": "GEL-ENRG-TOTE-PHOTON",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Photon Club Canvas Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 23.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-17",
-    "sku": "GEL-ENRG-POSTER-GRID2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Grid Ready Infographic Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 24.9,
-    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-18",
-    "sku": "GEL-ENRG-TOTE-SUN",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Sun Share Market Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 22.5,
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-19",
-    "sku": "GEL-ENRG-POSTER-KW",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Kilowatt Dreams Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 23.5,
-    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-20",
-    "sku": "GEL-ENRG-TOTE-BATT2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Battery Day Canvas Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 21.9,
-    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-21",
-    "sku": "GEL-ENRG-POSTER-HORIZON",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Clean Horizon Wall Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 25.9,
-    "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-22",
-    "sku": "GEL-ENRG-TOTE-WALK",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Watt Walk Everyday Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 20.9,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-23",
-    "sku": "GEL-ENRG-POSTER-CITY",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Panel City Map Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 26.5,
-    "image": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-24",
-    "sku": "GEL-ENRG-TOTE-SWITCH",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Green Switch Canvas Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 24.9,
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-25",
-    "sku": "GEL-ENRG-POSTER-AMPERE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Future Ampere Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 22.5,
-    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-solar-energy-26",
-    "sku": "GEL-ENRG-TOTE-SOFTSOLAR",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Solar Day Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 22.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-27",
-    "sku": "GEL-ENRG-POSTER-CLEAN2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Clean Power Wall Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 24.5,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-28",
-    "sku": "GEL-ENRG-TOTE-BRIGHT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Bright Grid Canvas Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 23.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-29",
-    "sku": "GEL-ENRG-POSTER-WATT2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Watt Wall Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 23.5,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-30",
-    "sku": "GEL-ENRG-TOTE-DAYLIGHT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Daylight Carry Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 21.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-31",
-    "sku": "GEL-ENRG-POSTER-FUTURE2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Future Grid Soft Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 25.5,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-32",
-    "sku": "GEL-ENRG-TOTE-ECOSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Eco Soft Market Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 20.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-33",
-    "sku": "GEL-ENRG-POSTER-PANEL2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Panel Soft Map Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 22.5,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-34",
-    "sku": "GEL-ENRG-TOTE-SUNEVERY",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Sun Soft Everyday Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 24.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-35",
-    "sku": "GEL-ENRG-POSTER-SOFTHORIZON",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Horizon Energy Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 26.5,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-36",
-    "sku": "GEL-ENRG-TOTE-GREENSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Green Soft Carry Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 22.9,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-37",
-    "sku": "GEL-ENRG-POSTER-SOFTAMP",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Ampere Wall Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 21.5,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-38",
-    "sku": "GEL-ENRG-TOTE-CHARGESOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Charge Soft Day Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 23.9,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-39",
-    "sku": "GEL-ENRG-POSTER-WINDSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Wind Soft Infographic Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 24.9,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-40",
-    "sku": "GEL-ENRG-TOTE-VOLT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Volt Canvas Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 21.9,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-41",
-    "sku": "GEL-ENRG-POSTER-GRIDSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Nordic Soft Grid Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 25.9,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-42",
-    "sku": "GEL-ENRG-TOTE-PHOTONSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Photon Soft Market Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 24.9,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-43",
-    "sku": "GEL-ENRG-POSTER-SWITCHSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Switch Wall Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 22.9,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-44",
-    "sku": "GEL-ENRG-TOTE-CLEAR",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Clear Energy Canvas Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 20.9,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-45",
-    "sku": "GEL-ENRG-POSTER-NETSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Net Zero Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 23.9,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-46",
-    "sku": "GEL-ENRG-TOTE-SUNRISE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Sunrise Soft Carry Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 25.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-47",
-    "sku": "GEL-ENRG-POSTER-BATTSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Battery Map Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 26.9,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-48",
-    "sku": "GEL-ENRG-TOTE-FARM",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Farm Day Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 22.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-49",
-    "sku": "GEL-ENRG-POSTER-CURRENT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Current Wall Poster",
-    "category": "Education",
-    "supplierPriceUsd": 7.5,
-    "suggestedRetailUsd": 21.9,
-    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?auto=format&fit=crop&w=800&q=80",
-    "matchType": "poster",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-solar-energy-50",
-    "sku": "GEL-ENRG-TOTE-BRIGHTFUT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Bright Future Soft Tote",
-    "category": "Energy Merch",
-    "supplierPriceUsd": 7.1,
-    "suggestedRetailUsd": 23.5,
-    "image": "https://images.unsplash.com/photo-1590874103328-eac38a67478e?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tote",
-    "sector": "solar energy",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  }
-];
+const PRODUCT_BASE = "https://product.gelatoapis.com";
+const ECOM_BASE = "https://ecommerce.gelatoapis.com";
+
 const SECTOR_ALIASES: Record<string, string> = {
-  "beauty": "beauty",
-  "perfume": "beauty",
-  "perfumes": "beauty",
-  "skincare": "beauty",
-  "toys": "toys",
-  "kids": "toys",
-  "kid": "toys",
-  "children": "toys",
-  "electronics": "electronics",
-  "tech": "electronics",
-  "technology": "electronics",
-  "pet supplies": "pet supplies",
-  "pets": "pet supplies",
-  "pet": "pet supplies",
-  "home living": "home living",
-  "home": "home living",
-  "living": "home living",
-  "fitness": "fitness",
-  "outdoor": "fitness",
-  "sports": "fitness",
-  "solar energy": "solar energy",
-  "energy": "solar energy",
-  "solar": "solar energy",
-  "car accessories": "car accessories",
-  "car": "car accessories",
-  "auto": "car accessories",
-  "automotive": "car accessories"
+  beauty: "beauty", perfume: "beauty", perfumes: "beauty", skincare: "beauty",
+  toys: "toys", kids: "toys", kid: "toys", children: "toys",
+  electronics: "electronics", tech: "electronics", technology: "electronics",
+  "pet supplies": "pet supplies", pets: "pet supplies", pet: "pet supplies",
+  "home living": "home living", home: "home living", living: "home living",
+  fitness: "fitness", outdoor: "fitness", sports: "fitness",
+  "solar energy": "solar energy", energy: "solar energy", solar: "solar energy",
+  "car accessories": "car accessories", car: "car accessories", auto: "car accessories", automotive: "car accessories",
 };
+
+/** Preferred Gelato catalog UIDs per sector (POD merch). Unknown UIDs are skipped. */
+const SECTOR_CATALOGS: Record<string, string[]> = {
+  beauty: ["apparel", "tote-bags", "mugs", "posters", "canvas"],
+  toys: ["posters", "apparel", "canvas", "cards"],
+  electronics: ["phone-cases", "apparel", "mugs", "posters"],
+  "pet supplies": ["apparel", "tote-bags", "mugs", "posters"],
+  "home living": ["posters", "canvas", "mugs", "tote-bags", "apparel", "pillows"],
+  fitness: ["apparel", "tote-bags", "posters", "mugs"],
+  "solar energy": ["posters", "tote-bags", "apparel", "canvas"],
+  "car accessories": ["apparel", "tote-bags", "posters", "mugs"],
+};
+
+const FALLBACK_CATALOGS = ["posters", "apparel", "mugs", "canvas", "cards", "tote-bags", "phone-cases", "pillows", "calendars", "framed-posters"];
+
 function money(value: unknown) {
   const amount = Number(value);
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) / 100 : 0;
 }
+
 function resolveSector(raw: string) {
   const key = String(raw || "").toLowerCase().trim();
-  if (!key) return SELECTED[0]?.sector || "beauty";
+  if (!key) return "beauty";
   if (SECTOR_ALIASES[key]) return SECTOR_ALIASES[key];
   for (const [alias, sector] of Object.entries(SECTOR_ALIASES)) {
     if (key.includes(alias) || alias.includes(key)) return sector;
   }
-  return key;
+  return SECTOR_CATALOGS[key] ? key : "beauty";
 }
-function curated(sector: string) {
-  return SELECTED
-    .filter((p) => !p.sector || String(p.sector).toLowerCase() === sector)
-    .map((p, i) => ({
-      id: String(p.id || `gelato-selected-${i}`),
-      sku: String(p.sku || ""),
-      supplier: "Gelato",
-      provider: "gelato",
-      name: String(p.name || "Gelato product"),
-      category: String(p.category || sector),
-      supplierPriceUsd: money(p.supplierPriceUsd) || money(p.suggestedRetailUsd),
-      suggestedRetailUsd: money(p.suggestedRetailUsd) || money(p.supplierPriceUsd),
-      image: String(p.image || ""),
-      sector: String(p.sector || sector),
-    }))
-    .filter((p) => p.suggestedRetailUsd > 0 && p.name);
+
+function prettyTitle(productUid: string, catalogUid: string, product: any) {
+  if (product?.title) return String(product.title);
+  if (product?.name) return String(product.name);
+  const bits = String(productUid || "").split("_").filter(Boolean);
+  const human = bits
+    .slice(0, 6)
+    .map((b) => b.replace(/-/g, " "))
+    .join(" · ");
+  const cat = String(catalogUid || "Gelato").replace(/-/g, " ");
+  return human ? `${cat}: ${human}` : `Gelato ${cat} product`;
 }
+
+function estimateRetail(catalogUid: string) {
+  const c = String(catalogUid || "").toLowerCase();
+  if (c.includes("mug")) return { cost: 6.5, retail: 18.9 };
+  if (c.includes("tote")) return { cost: 7.1, retail: 22.5 };
+  if (c.includes("poster") || c.includes("canvas")) return { cost: 8.2, retail: 24.9 };
+  if (c.includes("phone") || c.includes("case")) return { cost: 8.8, retail: 24.9 };
+  if (c.includes("pillow")) return { cost: 11, retail: 32.9 };
+  if (c.includes("apparel") || c.includes("shirt") || c.includes("hoodie")) return { cost: 9.4, retail: 29.9 };
+  return { cost: 9, retail: 26.9 };
+}
+
+function normalizeCatalogProduct(product: any, index: number, sector: string, catalogUid: string) {
+  const uid = String(product?.productUid || product?.id || `gelato-${index}`);
+  const prices = estimateRetail(catalogUid);
+  const retail = money(product?.price?.basePrice ?? product?.price?.amount ?? product?.price) || prices.retail;
+  const cost = money(product?.cost ?? product?.supplierPrice) || prices.cost;
+  return {
+    id: uid,
+    sku: uid.slice(0, 48),
+    supplier: "Gelato",
+    provider: "gelato",
+    gelatoProductUid: uid,
+    name: prettyTitle(uid, catalogUid, product),
+    category: String(product?.category || catalogUid || sector),
+    brand: "Gelato",
+    supplierPriceUsd: cost,
+    suggestedRetailUsd: retail,
+    image: String(product?.previewUrl || product?.imageUrl || product?.thumbnailUrl || product?.image || ""),
+    sector,
+    catalogUid,
+    compliance: "EU/Nordic POD merch only — apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims",
+  };
+}
+
+function normalizeEcom(product: any, index: number, sector: string) {
+  const retail = money(
+    product?.price?.basePrice ?? product?.price?.amount ?? product?.price ?? product?.suggestedRetailUsd ?? product?.retailPrice
+  );
+  return {
+    id: String(product?.id || product?.productUid || `gelato-ecom-${index}`),
+    sku: String(product?.sku || product?.productUid || product?.id || ""),
+    supplier: "Gelato",
+    provider: "gelato",
+    gelatoProductUid: String(product?.productUid || product?.id || ""),
+    name: String(product?.title || product?.name || "Gelato product"),
+    category: String(product?.category || sector),
+    brand: "Gelato",
+    supplierPriceUsd: retail,
+    suggestedRetailUsd: retail,
+    image: String(product?.previewUrl || product?.imageUrl || product?.image || product?.thumbnailUrl || ""),
+    sector,
+    compliance: "EU/Nordic POD merch only — apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims",
+  };
+}
+
+async function listCatalogUids(headers: Record<string, string>) {
+  const response = await fetch(`${PRODUCT_BASE}/v3/catalogs`, { headers });
+  if (!response.ok) return [] as string[];
+  const result: any = await response.json().catch(() => []);
+  const list = Array.isArray(result) ? result : Array.isArray(result?.catalogs) ? result.catalogs : [];
+  return list.map((c: any) => String(c?.catalogUid || c?.uid || c?.id || "")).filter(Boolean);
+}
+
+async function searchCatalog(headers: Record<string, string>, catalogUid: string, limit: number) {
+  const response = await fetch(`${PRODUCT_BASE}/v3/catalogs/${encodeURIComponent(catalogUid)}/products:search`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ offset: 0, limit }),
+  });
+  if (!response.ok) return [] as any[];
+  const result: any = await response.json().catch(() => ({}));
+  if (Array.isArray(result?.products)) return result.products;
+  if (Array.isArray(result)) return result;
+  return [];
+}
+
+async function loadStoreProducts(headers: Record<string, string>, storeId: string, sector: string) {
+  const url = new URL(`${ECOM_BASE}/v1/stores/${storeId}/products`);
+  url.searchParams.set("limit", "100");
+  url.searchParams.set("offset", "0");
+  const response = await fetch(url.toString(), { headers });
+  if (!response.ok) return [] as any[];
+  const result: any = await response.json().catch(() => ({}));
+  const list = Array.isArray(result?.products) ? result.products : Array.isArray(result) ? result : [];
+  return list.map((p: any, i: number) => normalizeEcom(p, i, sector)).filter((p: any) => p.name && p.suggestedRetailUsd > 0);
+}
+
+async function loadCatalogProducts(headers: Record<string, string>, sector: string) {
+  const available = await listCatalogUids(headers);
+  const preferred = SECTOR_CATALOGS[sector] || SECTOR_CATALOGS.beauty;
+  const ordered = [
+    ...preferred.filter((c) => !available.length || available.includes(c)),
+    ...available.filter((c) => !preferred.includes(c)),
+    ...FALLBACK_CATALOGS.filter((c) => !preferred.includes(c) && !available.includes(c)),
+  ];
+  const uniqueCatalogs = [...new Set(ordered)];
+  const seen = new Set<string>();
+  const out: any[] = [];
+  for (const catalogUid of uniqueCatalogs) {
+    if (out.length >= 50) break;
+    const need = Math.min(25, 50 - out.length);
+    const products = await searchCatalog(headers, catalogUid, need + 5);
+    for (const product of products) {
+      const item = normalizeCatalogProduct(product, out.length, sector, catalogUid);
+      if (!item.id || seen.has(item.id)) continue;
+      seen.add(item.id);
+      out.push(item);
+      if (out.length >= 50) break;
+    }
+  }
+  return out.slice(0, 50);
+}
+
 export async function onRequestGet(context: any) {
   const url = new URL(context.request.url);
   const wanted = url.searchParams.get("q") || url.searchParams.get("sector") || "";
-  const defaultSector = String(SELECTED[0]?.sector || "beauty");
-  const sector = resolveSector(wanted || defaultSector);
-  const headers = { "access-control-allow-origin": "*", "cache-control": "public, max-age=60" };
-  const products = curated(sector).slice(0, 50);
-  return Response.json(
-    { ok: true, supplier: "gelato", sector, query: sector, products, count: products.length, source: "gelato-selected-primary", markets: ["NO", "EU", "PE"] },
-    { status: products.length ? 200 : 503, headers }
-  );
+  const sector = resolveSector(wanted || "beauty");
+  const headersOut = { "access-control-allow-origin": "*", "cache-control": "public, max-age=300" };
+  const apiKey = context.env.GELATO_API_KEY;
+  if (!apiKey) {
+    return Response.json({ error: "Gelato is not configured", products: [], supplier: "Gelato", sector, source: "gelato-unconfigured" }, { status: 503, headers: headersOut });
+  }
+  const headers = { "X-API-KEY": String(apiKey), "content-type": "application/json", "User-Agent": "NordicStore/1.0" };
+
+  try {
+    let storeId = context.env.GELATO_STORE_ID ? String(context.env.GELATO_STORE_ID) : "";
+    if (!storeId) {
+      const storesRes = await fetch(`${ECOM_BASE}/v1/stores`, { headers });
+      if (storesRes.ok) {
+        const stores: any = await storesRes.json().catch(() => ({}));
+        const list = Array.isArray(stores?.stores) ? stores.stores : Array.isArray(stores) ? stores : [];
+        storeId = String(list[0]?.id || list[0]?.storeId || "");
+      }
+    }
+    if (storeId) {
+      const storeProducts = await loadStoreProducts(headers, storeId, sector);
+      if (storeProducts.length >= 8) {
+        return Response.json({
+          ok: true,
+          supplier: "Gelato",
+          sector,
+          query: sector,
+          products: storeProducts.slice(0, 50),
+          count: Math.min(storeProducts.length, 50),
+          source: "gelato-live-store",
+          storeId,
+          markets: ["NO", "EU", "PE"],
+          compliance: "EU/Nordic POD merch",
+        }, { headers: headersOut });
+      }
+    }
+
+    const catalog = await loadCatalogProducts(headers, sector);
+    return Response.json({
+      ok: true,
+      supplier: "Gelato",
+      sector,
+      query: sector,
+      products: catalog,
+      count: catalog.length,
+      source: "gelato-live-catalog",
+      markets: ["NO", "EU", "PE"],
+      compliance: "EU/Nordic POD merch",
+    }, { status: catalog.length ? 200 : 503, headers: headersOut });
+  } catch (error) {
+    return Response.json({
+      error: error instanceof Error ? error.message : "Gelato request failed",
+      products: [],
+      supplier: "Gelato",
+      sector,
+      source: "gelato-error",
+    }, { status: 502, headers: headersOut });
+  }
 }
