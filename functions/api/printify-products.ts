@@ -647,7 +647,7 @@ const SELECTED: any[] = [
     "provider": "printify",
     "printifyProductId": "",
     "printifyVariantId": "",
-    "name": "Nordic Soft Grid Poster",
+    "name": "Solwirk Soft Grid Poster",
     "category": "Education",
     "supplierPriceUsd": 7.5,
     "suggestedRetailUsd": 25.9,
