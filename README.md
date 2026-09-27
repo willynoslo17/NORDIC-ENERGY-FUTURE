@@ -1,4 +1,6 @@
-# Nordic Energy & Future
+# Solwirk — Energy & Future
+
+Storefront brand: **Solwirk** · https://solwirk.no/ · Solwirk er et varemerke fra ML Internasjonal. (Repo / Pages project: `NORDIC-ENERGY-FUTURE`, formerly "Nordic Energy & Future".)
 
 International storefront for Norway, Europe and Peru. Responsive catalog, market localization, cart, delivery options, test checkout and supplier-ready API endpoints.
 ## Direct commerce activation
