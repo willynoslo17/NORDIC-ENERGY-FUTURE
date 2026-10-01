@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solwirk.no/sitemap.xml
