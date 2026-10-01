@@ -94,6 +94,9 @@ const BLOCK_KIDS =
 /** Listings whose supplier title makes health, medical, safety or performance claims are not shown. */
 const BLOCK_CLAIMS =
   /\b(cures?|cured|healing|heals?|therap(?:y|eutic)|medical|medicine|clinically|pain relief|relieves? pain|anti[- ]?(?:anxiety|aging|ageing|wrinkle|inflammatory|bacterial|viral|choke|snoring)|anxiety relief|detox|weight loss|slimming|fat burn(?:ing|er)?|immune|disinfect\w*|sterili[sz]\w*|orthop(?:a)?edic|posture correct\w*|fuel sav\w*|save fuel|power sav\w*|energy sav\w*|electricity sav\w*|horsepower|performance chip)\b/i;
+/** Solwirk: off-topic, supplement and pseudo-science listings that CJ returns for "energy" keywords. */
+const BLOCK_STORE =
+  /\b(capsules?|gumm(?:y|ies)|creatine|supplements?|nutrients?|nutrition|herbal|vitamins?|protein|quantum|chakra|anion|negative[- ]?ions?|scalar|magnet(?:ic)?[- ]?(?:therapy|energy|bracelets?|jewel\w*|necklaces?)|energy[- ]?(?:boost\w*|stones?|crystals?|bracelets?|pendants?|necklaces?|jewel\w*|gumm\w*|capsules?|drinks?)|bracelets?|necklaces?|pendants?|clavicle|jewel(?:ry|lery)?|amulets?|talisman|healing crystals?|electrolysis|gas)\b/i;
 /** Kids shop: items that are toys may only be listed when CJ reports a CE certification. */
 const KIDS_TOY =
   /\b(toys?|montessori|puzzles?|building blocks?|plush|dolls?|rattles?|teethers?|games?)\b/i;
@@ -132,7 +135,7 @@ async function getToken(apiKey: string, forceNew = false): Promise<{ token: stri
 }
 
 function catalogCacheUrl(origin: string, query: string, page: number) {
-  return `${origin}/__cache/cj-products/v1?sector=${encodeURIComponent(PROFILE.sector)}&q=${encodeURIComponent(query)}&page=${page}`;
+  return `${origin}/__cache/cj-products/v2?sector=${encodeURIComponent(PROFILE.sector)}&q=${encodeURIComponent(query)}&page=${page}`;
 }
 
 async function readCatalog(key: string): Promise<CachedCatalog | null> {
@@ -184,6 +187,7 @@ function flatten(data: any): any[] {
 function blocked(name: string): boolean {
   if (BLOCK_GENERAL.test(name)) return true;
   if (BLOCK_CLAIMS.test(name)) return true;
+  if (BLOCK_STORE.test(name)) return true;
   if (PROFILE.compliance === "beauty" && BLOCK_BEAUTY.test(name)) return true;
   if (PROFILE.compliance === "kids" && BLOCK_KIDS.test(name)) return true;
   if (PROFILE.compliance === "health_adjacent" && BLOCK_BEAUTY.test(name)) return true;
