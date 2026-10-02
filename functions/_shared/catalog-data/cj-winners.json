@@ -1,5 +1,5 @@
 {
-  "note": "Trend-researched CJ winners (2026-10-02). keywords = CJ search words; pids = vetted products shown on the storefront (after the live curated set). Name, image and cost come live from CJ; price rule in functions/_shared/pricing.ts.",
+  "note": "Trend-researched CJ winners (2026-10-02). keywords = CJ search words; pids = vetted products shown on the storefront (after the live curated set). Name, image and cost come live from CJ; price rule in functions/_shared/pricing.ts. Electrical solar items (lights, panels, power banks) are eligible only with CJ's CE certification flag (requireCe).",
   "keywords": [
     "solar shower bag",
     "camping shower bag",
@@ -34,10 +34,25 @@
     "solar panel roof mount",
     "solar panel z bracket",
     "solar panel cleaning",
-    "photovoltaic cleaning brush"
+    "photovoltaic cleaning brush",
+    "solar garden lights",
+    "solar string lights",
+    "solar lantern",
+    "solar wall light",
+    "solar fence light",
+    "solar christmas lights",
+    "solar camping lantern",
+    "foldable solar panel",
+    "portable solar panel",
+    "solar power bank",
+    "solar motion sensor light",
+    "solar flood light",
+    "solar path lights",
+    "solar spotlight"
   ],
   "pids": [],
   "minUsd": 3.5,
   "maxUsd": 60,
-  "exclude": "\\b(usb|electric\\w*|rechargeable|led|leds|smart|automatic|wireless|battery|batteries|charging|charger|bluetooth|gps|camera|fountain|ultrasonic|laser|lamp|lights?|light-up|luminous|glowing|heated|heating pad|heater(?!\\s*bag)|fan|vacuum|power bank|power station|inverter|controller|panel(?!\\s*(clean\\w*|brush|mount\\w*|brackets?|stand|clips?|cable clips?))|generator|speaker|sensor|digital|display|remote|motor|pump|timer|projector|clock|plug|socket|volt|12v|24v|mc4|connector|wire|cable(?!\\s*clips?)|dog|pet|cat|toy|toys|gas)\\b"
+  "exclude": "\\b(bluetooth|gps|camera|fountain|ultrasonic|laser|heating pad|heater(?!\\s*bag)|fan|vacuum|power station|inverter|controller|generator|speaker|digital|display|remote|motor|pump|timer|projector|clock|plug|socket|12v|24v|48v|mc4|connector|dog|pet|cat|toy|toys|gas|watch|radio|car|fence controller|aromatherapy|perfume|kit|set \\d+w|\\d{3,}w)\\b",
+  "requireCe": "\\b(usb|electric\\w*|rechargeable|led|leds|lamp|lights?|lantern|battery|batteries|charging|charger|power bank|sensor|panel(?!\\s*(clean\\w*|brush|mount\\w*|brackets?|stand|clips?|cable clips?))|smart|automatic|wireless|volt|\\d+v)\\b"
 }
