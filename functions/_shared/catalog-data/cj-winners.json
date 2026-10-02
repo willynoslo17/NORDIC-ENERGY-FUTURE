@@ -50,9 +50,89 @@
     "solar path lights",
     "solar spotlight"
   ],
-  "pids": [],
+  "pids": [
+    "43F626C6-B8A6-4422-90C0-B8D2B10523CC",
+    "1D523016-A9B3-45CB-A0EF-E097AD366714",
+    "EC4B1678-DAED-4349-9415-2612192DE24D",
+    "4C4CCC40-FF91-4CCD-AF58-C4496A8E11FB",
+    "1474281823210180608",
+    "1418407011351138304",
+    "2510080445011629000"
+  ],
   "minUsd": 3.5,
   "maxUsd": 60,
   "exclude": "\\b(bluetooth|gps|camera|fountain|ultrasonic|laser|heating pad|heater(?!\\s*bag)|fan|vacuum|power station|inverter|controller|generator|speaker|digital|display|remote|motor|pump|timer|projector|clock|plug|socket|12v|24v|48v|mc4|connector|dog|pet|cat|toy|toys|gas|watch|radio|car|fence controller|aromatherapy|perfume|kit|set \\d+w|\\d{3,}w)\\b",
-  "requireCe": "\\b(usb|electric\\w*|rechargeable|led|leds|lamp|lights?|lantern|battery|batteries|charging|charger|power bank|sensor|panel(?!\\s*(clean\\w*|brush|mount\\w*|brackets?|stand|clips?|cable clips?))|smart|automatic|wireless|volt|\\d+v)\\b"
+  "requireCe": "\\b(usb|electric\\w*|rechargeable|led|leds|lamp|lights?|lantern|battery|batteries|charging|charger|power bank|sensor|panel(?!\\s*(clean\\w*|brush|mount\\w*|brackets?|stand|clips?|cable clips?))|smart|automatic|wireless|volt|\\d+v)\\b",
+  "products": [
+    {
+      "id": "43F626C6-B8A6-4422-90C0-B8D2B10523CC",
+      "sku": "CJYDQTLY00136",
+      "name": "Sammenleggbar utendørsdusj med dusjpose for camping",
+      "nameEn": "Outdoor Shower Bag Camping Folding Shower",
+      "category": "Solenergi",
+      "image": "https://cf.cjdropshipping.com/20190221/2229238858019.png",
+      "supplierPriceMaxUsd": 32.926,
+      "keyword": "solar shower bag"
+    },
+    {
+      "id": "1D523016-A9B3-45CB-A0EF-E097AD366714",
+      "sku": "CJYDQTLY00338",
+      "name": "Trykkdusjpose for utendørs bruk",
+      "nameEn": "Outdoor portable pressure outdoor shower bag",
+      "category": "Solenergi",
+      "image": "https://cf.cjdropshipping.com/20200418/1312181499035.jpg",
+      "supplierPriceMaxUsd": 23.6667,
+      "keyword": "solar shower bag"
+    },
+    {
+      "id": "EC4B1678-DAED-4349-9415-2612192DE24D",
+      "sku": "CJYDQTLY00248",
+      "name": "Bærbar dusjpose for hytte og camping",
+      "nameEn": "Portable shower bag",
+      "category": "Solenergi",
+      "image": "https://cf.cjdropshipping.com/20190920/2616190100105.jpg",
+      "supplierPriceMaxUsd": 23.6667,
+      "keyword": "solar shower bag"
+    },
+    {
+      "id": "4C4CCC40-FF91-4CCD-AF58-C4496A8E11FB",
+      "sku": "CJBHNSNS15866",
+      "name": "Solcelle-dusjpose, 20 liter",
+      "nameEn": "20L Water Bag Solar Bath Bag",
+      "category": "Solenergi",
+      "image": "https://cf.cjdropshipping.com/20200611/2299199169053.jpg",
+      "supplierPriceMaxUsd": 24.4075,
+      "keyword": "solar water heater bag"
+    },
+    {
+      "id": "1474281823210180608",
+      "sku": "CJJT1387370",
+      "name": "Bærbar dusjpose for tur og klatring",
+      "nameEn": "Portable Shower Bag For Temporary Outdoor Climbing",
+      "category": "Solenergi",
+      "image": "https://cf.cjdropshipping.com/5f1317ae-a7fe-4943-9ff3-e0328f83e611.png",
+      "supplierPriceMaxUsd": 18.4815,
+      "keyword": "solar shower bag"
+    },
+    {
+      "id": "1418407011351138304",
+      "sku": "CJJT1224357",
+      "name": "Kraftig solcelle-dusjpose for familietur",
+      "nameEn": "Solar Thickening Simple Parent-child Tour Portable Shower Bag Field Self-driving Tour",
+      "category": "Solenergi",
+      "image": "https://cf.cjdropshipping.com/7cca7b6f-a4f2-46a8-b134-65618e98e2f0.jpg",
+      "supplierPriceMaxUsd": 31.0741,
+      "keyword": "solar shower bag"
+    },
+    {
+      "id": "2510080445011629000",
+      "sku": "CJYD2551863",
+      "name": "Bærbare solcelle-dusjposer for camping",
+      "nameEn": "Outdoor Camping Solar Shower Bags Portable",
+      "category": "Solenergi",
+      "image": "https://oss-cf.cjdropshipping.com/product/2025/10/08/04/07c99b3d-05d7-4d94-a361-1cdcd6ce6c8a_trans.jpeg",
+      "supplierPriceMaxUsd": 22.1852,
+      "keyword": "solar shower"
+    }
+  ]
 }
