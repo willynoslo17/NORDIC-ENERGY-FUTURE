@@ -1,0 +1,29 @@
+{
+  "note": "Trend-researched CJ winners (2026-10-02). keywords = CJ search words; pids = vetted products shown on the storefront (after the live curated set). Name, image and cost come live from CJ; price rule in functions/_shared/pricing.ts.",
+  "keywords": [
+    "solar shower bag",
+    "camping shower bag",
+    "solar panel cleaning brush",
+    "solar panel mounting bracket",
+    "solar panel bracket",
+    "solar panel mount",
+    "solar cable clips",
+    "solar cooker",
+    "solar oven",
+    "solar pool cover",
+    "pool solar heater",
+    "solar water heater bag",
+    "telescopic cleaning brush",
+    "solar panel stand",
+    "window insulation film",
+    "thermal curtain",
+    "draft stopper",
+    "pipe insulation",
+    "radiator reflector",
+    "heat reflective film"
+  ],
+  "pids": [],
+  "minUsd": 3.5,
+  "maxUsd": 60,
+  "exclude": "\\b(usb|electric\\w*|rechargeable|led|leds|smart|automatic|wireless|battery|batteries|charging|charger|bluetooth|gps|camera|fountain|ultrasonic|laser|lamp|lights?|light-up|luminous|glowing|heated|heating pad|heater(?!\\s*bag)|fan|vacuum|power bank|power station|inverter|controller|panel(?!\\s*(clean\\w*|brush|mount\\w*|brackets?|stand|clips?|cable clips?))|generator|speaker|sensor|digital|display|remote|motor|pump|timer|projector|clock|plug|socket|volt|12v|24v|mc4|connector|wire|cable(?!\\s*clips?)|dog|pet|cat|toy|toys|gas)\\b"
+}
