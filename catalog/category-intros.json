@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "no": "Solcellepaneler",
+      "es": "Paneles solares",
+      "intro_no": "Når du velger solcellepaneler, bør du først kontrollere brukssted, tilgjengelig plass og energibehov. Sammenlign mål, oppgitt effekt og tilkoblinger med behovene dine, og vurder om panelets spesifikasjoner passer til resten av løsningen. Se etter opplysninger om montering, driftsforhold og tekniske krav og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller. Hvis løsningen kobles til strømnettet, skal tilkoblingen utføres av en autorisert elektriker.",
+      "intro_es": "Al elegir paneles solares, revisa el lugar de uso, el espacio disponible y tus necesidades energéticas. Compara las medidas, la potencia y las conexiones indicadas con lo que necesitas y considera si las especificaciones del panel encajan con el resto del sistema. Comprueba el montaje, las condiciones de uso y los requisitos técnicos. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar. La conexión a la red eléctrica debe realizarla un electricista autorizado."
+    },
+    {
+      "no": "Bærbar solenergi",
+      "es": "Energía solar portátil",
+      "intro_no": "Når du velger bærbar solenergi, bør du først kontrollere hvordan utstyret skal transporteres og brukes. Sammenlign vekt og mål hvis oppgitt, kapasitet og tilkoblinger med behovene dine, og vurder om format, kapasitet og porter dekker behovene dine. Se etter opplysninger om oppgitt effekt, lading og kompatibilitet og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller. Hvis løsningen kobles til strømnettet, skal tilkoblingen utføres av en autorisert elektriker.",
+      "intro_es": "Al elegir energía solar portátil, revisa cómo transportarás y utilizarás el equipo. Compara el peso y las medidas si se indican, la capacidad y las conexiones con lo que necesitas y considera si el formato, la capacidad y los puertos cubren tus necesidades. Comprueba la potencia, la carga y la compatibilidad indicadas. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar. La conexión a la red eléctrica debe realizarla un electricista autorizado."
+    },
+    {
+      "no": "Batterier og energilagring",
+      "es": "Baterías y almacenamiento de energía",
+      "intro_no": "Når du velger batterier og energilagring, bør du først kontrollere hvilket system batteriet skal brukes sammen med. Sammenlign kapasitet, spenning og kompatible tilkoblinger med behovene dine, og vurder om batteridataene passer til utstyret og bruken din. Se etter opplysninger om ladekrav, installasjon og sikkerhetsinformasjon og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller. Hvis løsningen kobles til strømnettet, skal tilkoblingen utføres av en autorisert elektriker.",
+      "intro_es": "Al elegir baterías y almacenamiento de energía, revisa con qué sistema combinarás la batería. Compara la capacidad, el voltaje y las conexiones compatibles con lo que necesitas y considera si los datos de la batería corresponden a tu equipo y uso. Comprueba los requisitos de carga, instalación y seguridad. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar. La conexión a la red eléctrica debe realizarla un electricista autorizado."
+    },
+    {
+      "no": "Laderegulatorer og omformere",
+      "es": "Reguladores de carga e inversores",
+      "intro_no": "Når du velger laderegulatorer og omformere, bør du først kontrollere panel, batteri og belastning som enheten skal kobles til. Sammenlign oppgitte spenningsverdier, effekt og koblingsmåte med behovene dine, og vurder om de elektriske spesifikasjonene samsvarer med systemet. Se etter opplysninger om tilkoblingsskjema og tekniske begrensninger og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller. Hvis løsningen kobles til strømnettet, skal tilkoblingen utføres av en autorisert elektriker.",
+      "intro_es": "Al elegir reguladores de carga e inversores, revisa el panel, la batería y la carga que conectarás al equipo. Compara los voltajes, la potencia y el modo de conexión indicados con lo que necesitas y considera si las especificaciones eléctricas coinciden con el sistema. Comprueba el esquema de conexión y las limitaciones técnicas. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar. La conexión a la red eléctrica debe realizarla un electricista autorizado."
+    },
+    {
+      "no": "Kabler og tilkoblinger",
+      "es": "Cables y conexiones",
+      "intro_no": "Når du velger kabler og tilkoblinger, bør du først kontrollere hvilke komponenter som skal kobles sammen. Sammenlign lengde, kontakttype og elektriske spesifikasjoner med behovene dine, og vurder om kabelen passer til komponentene uten å overskride oppgitte krav. Se etter opplysninger om kompatibilitet, montering og driftsforhold og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller. Hvis løsningen kobles til strømnettet, skal tilkoblingen utføres av en autorisert elektriker.",
+      "intro_es": "Al elegir cables y conexiones, revisa qué componentes necesitas conectar. Compara la longitud, el tipo de conector y las especificaciones eléctricas con lo que necesitas y considera si el cable corresponde a los componentes y respeta los requisitos. Comprueba la compatibilidad, la instalación y las condiciones de uso. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar. La conexión a la red eléctrica debe realizarla un electricista autorizado."
+    }
+  ]
+}
