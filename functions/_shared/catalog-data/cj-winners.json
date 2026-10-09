@@ -1,4 +1,5 @@
 {
+  "onlyWinners": true,
   "note": "Trend-researched CJ winners (2026-10-02). keywords = CJ search words; pids = vetted products shown on the storefront (after the live curated set). Name, image and cost come live from CJ; price rule in functions/_shared/pricing.ts. Electrical solar items (lights, panels, power banks) are eligible only with CJ's CE certification flag (requireCe).",
   "keywords": [
     "solar shower bag",
