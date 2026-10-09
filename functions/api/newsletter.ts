@@ -72,21 +72,18 @@ function esc(value: string) {
   return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-/** DOI e-mail: bokmål first, then Spanish; the button links to {{ doubleoptin }} as Brevo requires. */
+/** DOI e-mail in bokmål; the button links to {{ doubleoptin }} as Brevo requires. */
 function doiHtml(): string {
-  const section = (lang: "nb" | "es") => {
-    const t = DOI_TEXT[lang];
-    return `<div lang="${lang}" style="margin:0 0 28px">` +
-      `<p style="margin:0 0 16px;line-height:1.55">${esc(t.intro)}</p>` +
-      `<p style="margin:0 0 16px"><a href="{{ doubleoptin }}" style="display:inline-block;padding:12px 20px;background:#111;color:#fff;text-decoration:none;border-radius:4px">${esc(t.button)}</a></p>` +
-      `<p style="margin:0;line-height:1.55;font-size:13px;color:#555">${esc(t.outro)}</p></div>`;
-  };
+  const t = DOI_TEXT.nb;
   return `<!doctype html><html lang="nb"><head><meta charset="utf-8"><title>${esc(DOI_TEXT.subject)}</title></head>` +
-    `<body style="margin:0;padding:24px;background:#f6f6f6;font-family:Arial,Helvetica,sans-serif;color:#111">` +
+    `<body style="margin:0;padding:24px;background:#E8F1F8;font-family:Arial,Helvetica,sans-serif;color:#0D2B45">` +
     `<div style="max-width:560px;margin:0 auto;background:#fff;padding:28px">` +
     `<p style="margin:0 0 20px;font-size:20px;font-weight:bold">${esc(STORE.brand)}</p>` +
-    section("nb") + `<hr style="border:0;border-top:1px solid #ddd;margin:0 0 24px">` + section("es") +
-    `<p style="margin:24px 0 0;font-size:12px;color:#777">MARTINEZ LOZANO INTERNASJONAL HANDEL · org.nr. 935 407 095 · Norbygata 19, 0187 Oslo · <a href="https://${STORE.domain}/personvern" style="color:#777">Personvern / Privacidad</a></p>` +
+    `<div lang="nb" style="margin:0 0 28px">` +
+      `<p style="margin:0 0 16px;line-height:1.55">${esc(t.intro)}</p>` +
+      `<p style="margin:0 0 16px"><a href="{{ doubleoptin }}" style="display:inline-block;padding:12px 20px;background:#0D2B45;color:#fff;text-decoration:none;border-radius:8px">${esc(t.button)}</a></p>` +
+      `<p style="margin:0;line-height:1.55;font-size:13px;color:#5A6B7B">${esc(t.outro)}</p></div>` +
+    `<p style="margin:24px 0 0;font-size:12px;color:#5A6B7B">MARTINEZ LOZANO INTERNASJONAL HANDEL · org.nr. 935 407 095 · Norbygata 19, 0187 Oslo · <a href="https://${STORE.domain}/personvern" style="color:#5A6B7B">Personvern</a></p>` +
     `</div></body></html>`;
 }
 
