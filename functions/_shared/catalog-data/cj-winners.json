@@ -87,8 +87,7 @@
     "1418407011351138304",
     "2510080445011629000",
     "1384043716477587456",
-    "1620304069497729024",
-    "1618441370866298880"
+    "1620304069497729024"
   ],
   "minUsd": 3.5,
   "maxUsd": 60,
@@ -184,16 +183,6 @@
       "image": "https://cf.cjdropshipping.com/ab8bab3c-3880-47f3-b70b-fb5bcfa2c858.jpg",
       "supplierPriceMaxUsd": 21.0741,
       "keyword": "solar shower bag"
-    },
-    {
-      "id": "1618441370866298880",
-      "sku": "CJJT1668219",
-      "name": "Krympetang for kabelsko, manuell (DR-1)",
-      "nameEn": "Energy-saving Terminal Crimping Pliers Model DR-1 Manual Cold Crimping Tool",
-      "category": "Solenergi",
-      "image": "https://cf.cjdropshipping.com/b7183ce2-d601-44d6-94a7-922a983eb698.jpg",
-      "supplierPriceMaxUsd": 5.1482,
-      "keyword": "mc4 crimping tool"
     }
   ]
 }
